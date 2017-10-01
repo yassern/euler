@@ -1,7 +1,7 @@
 x = 2520
 found = False
 
-while !found:
+while not found:
     for i in range(20, 1, -1):
         if x % i != 0:
             break
