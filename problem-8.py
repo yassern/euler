@@ -28,7 +28,6 @@ for _slice in slices:
     product = 1
     for char in _slice:
         product *= int(char)
-    if product > greatest_product:
-        greatest_product = product
+    greatest_product = max(greatest_product, product)
 
 print(greatest_product)

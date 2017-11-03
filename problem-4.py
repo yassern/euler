@@ -11,6 +11,5 @@ for i in range(999, 99, -1):
     for j in range(999, i - 1, -1):
         mult = i * j
         if is_palindrome(str(mult)):
-            if mult > largest_palindrome:
-                largest_palindrome = mult
+            largest_palindrome = max(largest_palindrome, mult)
 print(largest_palindrome)
